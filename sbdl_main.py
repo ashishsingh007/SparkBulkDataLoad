@@ -57,7 +57,6 @@ if __name__ == '__main__':
     api_secret = conf["kafka.api_secret"]
 
     #logger.info("Print api key & secret key" + str(api_key))
-
     kafka_kv_df.write \
         .format("kafka") \
         .option("kafka.bootstrap.servers", conf["kafka.bootstrap.servers"]) \
