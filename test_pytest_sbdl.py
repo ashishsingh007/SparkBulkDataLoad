@@ -10,6 +10,7 @@ def spark():
 
 def test_blank_test(spark):
     print(spark.version)
+
     print("Pytest framework is awesome")
     assert spark.version == "3.2.1"
 
